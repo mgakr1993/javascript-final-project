@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript - Membership Form</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+
+	<link rel="stylesheet" type="text/css" href="header.css">
+	<link rel="stylesheet" type="text/css" href="js4.css">
+	<script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+	<script src="header.js"></script>
+	<script src="js4.js"></script>
+
+</head>
+
+
+<body style="background-image: url('img/img10.png');" >
+
+
+	<div id="page_cont">
+	<header>
+
+	<div class="slide_image">
+		<img id="main_img" src="img/img09.jpg">
+	</div>
+
+	<br>
+
+	<div class="slide_dot">
+	
+	    <img id="img01" onclick="slideImage(1)" src="img/img01.png">
+	    <img id="img02" onclick="slideImage(2)" src="img/img01.png">
+	    <img id="img03" onclick="slideImage(3)" src="img/img01.png">
+	    <img id="img04" onclick="slideImage(4)" src="img/img01.png">
+	    <img id="img05" onclick="slideImage(5)" src="img/img01.png">
+	    <img id="img06" onclick="slideImage(6)" src="img/img01.png">
+	    
+  	</div>
+
+  	<div id="menu_item">
+  		<div><a href="index.html"><button> Top Page</button></a></div>
+  		<div><a href="js2.html"><button>Score</button></a></div>
+  		<div><a href="js3.html"><button>Shop</button></a></div>
+  		<div><a href="jsworld.html"><button>JS World</button></a></div>
+  	</div>
+
+  	<div id="menu_item">
+	    <div><a href="js4.html"><button>Form</button></a></div>
+	    <div><a href="js5.html"><button>Map</button></a></div>
+	    <div><a href="js6.html"><button>Animation</button></a></div>
+	</div>
+
+  	</header>
+
+
+	<div id="content">
+		<h1 style="text-align: center;" >Membership Form</h1>
+
+		<div id="form1" >
+		<form name="membership" action="js4.html" method="get">
+			<p style="text-align: center;font-size: 40px;">Please enter your details</p>
+			<label >Name</label>
+			<input class="input" type="text" name="name" placeholder="Enter Your Name" >
+			<span id="label_name" style="color: red;"></span>
+			<br><br>
+
+			<label>Age</label>
+			<input class="input" type="text" name="age" placeholder="Enter Your Age" >
+			<span id="label_age" style="color: red;"></span>
+			<br><br>
+
+			<label>Telephone Number</label>
+			<input class="input" type="text" name="phone" placeholder="+123 12345678 or +12 12345678">
+			<span id="label_phone" style="color: red;"></span>
+			<br><br>
+
+			<label>E-mail</label>
+			<input class="input" type="text" name="email" placeholder="example@abc.com">
+			<span id="label_email" style="color: red;"></span>
+			<br/><br/>
+
+			<input type="button" value="submit"  name="" onclick="formValidate()">
+			<input type="reset" value="reset">
+		</form>
+		</div>
+		
+	</div>
+
+
+
+  	
+	<div id="footer">
+		<h4 style="text-align: center;" >Copyright (C) 2023s copyrights. KCGI. MGAKR. All Rights Reserved.</h4>
+		
+	</div>
+  
+  	</div>
+
+	
+</body>
+
+</html>

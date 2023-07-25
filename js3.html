@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript - Shop</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+
+	<link rel="stylesheet" type="text/css" href="header.css">
+	<link rel="stylesheet" type="text/css" href="js3.css">
+	<script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+	<script src="header.js"></script>
+	<script src="js3.js"></script>
+
+</head>
+
+
+<body style="background-image: url('img/img10.png');" >
+
+
+	<div id="page_cont">
+	<header>
+
+	<div class="slide_image">
+		<img id="main_img" src="img/img09.jpg">
+	</div>
+
+	<br>
+
+	<div class="slide_dot">
+	
+	    <img id="img01" onclick="slideImage(1)" src="img/img01.png">
+	    <img id="img02" onclick="slideImage(2)" src="img/img01.png">
+	    <img id="img03" onclick="slideImage(3)" src="img/img01.png">
+	    <img id="img04" onclick="slideImage(4)" src="img/img01.png">
+	    <img id="img05" onclick="slideImage(5)" src="img/img01.png">
+	    <img id="img06" onclick="slideImage(6)" src="img/img01.png">
+	    
+  	</div>
+
+  	<div id="menu_item">
+  		<div><a href="index.html"><button> Top Page</button></a></div>
+  		<div><a href="js2.html"><button>Score</button></a></div>
+  		<div><a href="js3.html"><button>Shop</button></a></div>
+  		<div><a href="jsworld.html"><button>JS World</button></a></div>
+  	</div>
+
+  	<div id="menu_item">
+	    <div><a href="js4.html"><button>Form</button></a></div>
+	    <div><a href="js5.html"><button>Map</button></a></div>
+	    <div><a href="js6.html"><button>Animation</button></a></div>
+	</div>
+
+  	</header>
+
+
+	<div id="content">
+		<h1 id="welcome" style="text-align: center;" >Welcome to my shop</h1>
+		<br>
+		<div id="main">
+			
+			<div id="grid" >
+
+				<div onclick="selectProduct(1)" id="grid1"><img src="img/Option1.jpg"> </div>
+				<div onclick="selectProduct(2)" id="grid2"><img src="img/Option2.jpg"> </div>
+				<div id="grid3"><h1 style="text-align:center;color: darkblue;">Please select your desired color</h1></div>
+				<div onclick="selectProduct(3)" id="grid4"><img src="img/Option3.jpg"> </div>
+				<div onclick="selectProduct(4)" id="grid5"><img src="img/Option4.jpg"> </div>
+				<div onclick="selectProduct(5)" id="grid6"><img src="img/Option5.jpg"> </div>
+				<div onclick="selectProduct(6)" id="grid7"><img src="img/Option6.jpg"> </div>
+				
+			</div>
+
+			<input style="display: block; margin: 10px auto;border-radius: 2%;text-align: center; font-size: 18px;" type="button" name="" value="Add to Basket" onclick="showcolor()">
+			
+		</div>
+
+	</div>
+
+
+
+  	
+	<div id="footer">
+		<h4 style="text-align: center;" >Copyright (C) 2023s copyrights. KCGI. MGAKR. All Rights Reserved.</h4>
+		
+	</div>
+  
+  	</div>
+
+	
+</body>
+
+</html>

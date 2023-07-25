@@ -1,0 +1,68 @@
+#content {
+	background-image: url("img/img13.jpg");
+
+}
+
+
+ #grid1 :hover, #grid2 :hover , #grid3  , #grid4  :hover, #grid5 :hover, #grid6 :hover , #grid7 :hover , #grid8 :hover , #grid9  :hover {
+	background-color: whitesmoke;
+	font-size: 10px;
+	text-align: center;
+	color: blue;
+	box-shadow: inset 4px 4px 5px 1px darkgreen,inset -4px -4px 5px 1px darkgreen;
+	border-radius: 10%;
+	font-size-adjust: auto;
+	padding: 6px;
+	margin: 0 auto;
+}
+
+
+#grid {
+		height: 78%;
+		width: 50%;
+	  	box-sizing: border-box;
+		display: grid;
+		grid-template-columns: 23.5% 23.5% 51%;
+		grid-template-rows:33% 33% 33%;
+		grid-column-gap:0.5% ;
+		grid-row-gap:0.5%  ;
+		margin: 0 auto;
+	  
+
+}
+
+#grid1 , #grid2 , #grid3 , #grid4 , #grid5, #grid6 , #grid7 , #grid8 , #grid9  {
+	background-color: whitesmoke;
+	box-shadow: inset 4px 4px 5px 1px darkblue,inset -4px -4px 5px 1px darkblue;
+	border-radius: 10%;
+	padding: 6px;
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+#grid3{
+	grid-column-start: 3;
+	grid-column-end:4;
+	grid-row-start: 1;
+	grid-row-end: 4;
+	display: flex;
+	align-items: center;
+}
+
+#grid img {
+	width: 100%;
+	height: 100%;
+	border-radius: 10%;
+
+}
+
+#main{
+	margin: 0 auto;
+}
+
+#welcome{
+	background: rgba(0, 191, 255, 0.5);
+	width: fit-content;
+	margin: 0 auto;
+	color: darkblue;
+}

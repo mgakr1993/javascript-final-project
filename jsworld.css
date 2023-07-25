@@ -1,0 +1,14 @@
+#content{
+	background-image: url("img/img19.jpg");
+	background-size: cover;
+	
+
+}
+
+form {
+	background: rgba(255, 0, 0, 0.5);
+	width: fit-content;
+	padding: 10px;
+	margin: 0 auto;
+}
+
