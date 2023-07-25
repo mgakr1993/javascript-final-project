@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript - JS World</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+
+	<link rel="stylesheet" type="text/css" href="header.css">
+	<link rel="stylesheet" type="text/css" href="jsworld.css">
+	
+	<script src="header.js"></script>
+	<script src="jsworld.js"></script>
+	
+
+</head>
+
+
+<body style="background-image: url('img/img10.png');" >
+
+
+	<div id="page_cont">
+	<header>
+
+	<div class="slide_image">
+		<img id="main_img" src="img/img09.jpg">
+	</div>
+
+	<br>
+
+	<div class="slide_dot">
+	
+	    <img id="img01" onclick="slideImage(1)" src="img/img01.png">
+	    <img id="img02" onclick="slideImage(2)" src="img/img01.png">
+	    <img id="img03" onclick="slideImage(3)" src="img/img01.png">
+	    <img id="img04" onclick="slideImage(4)" src="img/img01.png">
+	    <img id="img05" onclick="slideImage(5)" src="img/img01.png">
+	    <img id="img06" onclick="slideImage(6)" src="img/img01.png">
+	    
+  	</div>
+
+  	<div id="menu_item">
+  		<div><a href="index.html"><button> Top Page</button></a></div>
+  		<div><a href="js2.html"><button>Score</button></a></div>
+  		<div><a href="js3.html"><button>Shop</button></a></div>
+  		<div><a href="jsworld.html"><button>JS World</button></a></div>
+  	</div>
+
+  	<div id="menu_item">
+	    <div><a href="js4.html"><button>Form</button></a></div>
+	    <div><a href="js5.html"><button>Map</button></a></div>
+	    <div><a href="js6.html"><button>Animation</button></a></div>
+	</div>
+
+  	</header>
+
+
+	<div id="content">
+		<h1 style="text-align: center;" >JS World</h1>
+		
+		<form name="single_line" action="jsworld.html" method="get">
+			<label >User Name :</label><br>
+			<input type="text" name="username"> 
+			<input type="button" value="submit" onclick="displayUser()" name="">
+			<input type="reset" value="reset">
+
+		</form>
+
+		<br><br>
+
+		<form name="multiple_line" action="jsworld.html" method="get">
+			<label >About you :</label><br>
+			<textarea name="about" cols="40" row="5"></textarea> <br>
+			<input type="button" value="submit" onclick="displayAbout()" name="">
+			<input type="reset" value="reset">
+		</form>
+
+		<br><br>
+
+		<form name="radio" action="jsworld.html" method="get">
+			<label>Please select your major : </label><br><br>
+			<input type="radio" name="major" value="Web System Development">Web System Development <br>
+			<input type="radio" name="major" value="Data Science">Data Science<br>
+			<input type="radio" name="major" value="ERP">ERP<br>
+			<input type="radio" name="major" value="Networking">Networking
+			<br>
+			<input type="button" value="submit" onclick="displayRadio()" name="">
+			<input type="reset" value="reset">
+		</form>
+
+		<br><br>
+
+
+
+		<form name="checkbox" action="jsworld.html" method="get">
+			<label>Please select the languages you can speak : </label><br><br>
+			<input type="checkbox" name="language" value="English">English <br>
+			<input type="checkbox" name="language" value="Japanese">Japanese<br>
+			<input type="checkbox" name="language" value="Sihalese">Sihalese<br>
+			<input type="checkbox" name="language" value="Other">Other
+			<br>
+			<input type="button" value="submit" onclick="displayCheck()" name="">
+			<input type="reset" value="reset">
+		</form>
+
+		<br><br>
+
+
+
+		<form name="single_option" action="jsworld.html" method="get" >
+			<label >Select your desired KCG group :</label><br><br>
+			<select name="KCGgroup">
+				<option value="KCG">KCG</option>
+				<option value="KCGI">KCGI</option>
+				<option value="KJLTC">KJLTC</option>
+			</select>
+			<br>
+			<input type="button" value="submit" onclick="displaySingleOption()" name="">
+			<input type="reset" value="reset">
+		</form>
+
+		<br><br>
+
+
+
+		<form name="multiple_option" action="jsworld.html" method="get" >
+			<label >Favorite Instrument :</label><br><br>
+			<select name="instrument" multiple="multiple">
+				<option value="guitar">guitar</option>
+				<option value="drums">drums</option>
+				<option value="keyboard">keyboard</option>
+				<option value="bass">bass</option>
+			</select>
+			<br>
+			<input type="button" value="submit" onclick="displayMultipleOption()" name="">
+			<input type="reset" value="reset">
+		</form>
+
+		<br><br>
+
+		<h3 style="text-align:center;">Please move your cursor on image</h3>
+			
+		<img style="width: 200px;height: 150px;margin: 0 auto;display: flex;justify-content: center;align-items: center;" src="img/img20.jpg"  onmouseover="this.src='img/img21.jpg'" onmouseout="this.src='img/img20.jpg'" >
+
+
+
+		<br><br><br><br>
+		<h3 style="text-align:center;">Please select your favourite city</h3>
+		<div style="margin: 0 auto;display: flex;justify-content: center;">
+			<button style="margin:10px;width: 25%;" onclick="selectCity(1)">Kyoto</button>
+			<button style="margin:10px;width: 25%;" onclick="selectCity(2)">Osaka</button>
+			<button style="margin:10px;width: 25%;" onclick="selectCity(3)">Tokyo</button>
+		</div>
+		<br>
+
+		<div id="select_image" style="width: 100%;height: fit-content;margin: 0 auto;display: flex;justify-content: center;align-items: center;" >
+			<img style='width:100%; ' src='img/img25.png' >
+		</div>
+		
+
+	</div>
+
+
+
+  	
+	<div id="footer">
+		<h4 style="text-align: center;" >Copyright (C) 2023s copyrights. KCGI. MGAKR. All Rights Reserved.</h4>
+		
+	</div>
+  
+  	</div>
+
+	
+</body>
+
+</html>
