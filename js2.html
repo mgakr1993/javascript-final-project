@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript - Score</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+
+	<link rel="stylesheet" type="text/css" href="header.css">
+	<link rel="stylesheet" type="text/css" href="js2.css">
+	<script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+	<script src="header.js"></script>
+	<script src="js2.js"></script>
+
+</head>
+
+
+<body style="background-image: url('img/img10.png');" >
+
+
+	<div id="page_cont">
+	<header>
+
+	<div class="slide_image">
+		<img id="main_img" src="img/img09.jpg">
+	</div>
+
+	<br>
+
+	<div class="slide_dot">
+	
+	    <img id="img01" onclick="slideImage(1)" src="img/img01.png">
+	    <img id="img02" onclick="slideImage(2)" src="img/img01.png">
+	    <img id="img03" onclick="slideImage(3)" src="img/img01.png">
+	    <img id="img04" onclick="slideImage(4)" src="img/img01.png">
+	    <img id="img05" onclick="slideImage(5)" src="img/img01.png">
+	    <img id="img06" onclick="slideImage(6)" src="img/img01.png">
+	    
+  	</div>
+
+  	<div id="menu_item">
+  		<div><a href="index.html"><button> Top Page</button></a></div>
+  		<div><a href="js2.html"><button>Score</button></a></div>
+  		<div><a href="js3.html"><button>Shop</button></a></div>
+  		<div><a href="jsworld.html"><button>JS World</button></a></div>
+  	</div>
+
+  	<div id="menu_item">
+	    <div><a href="js4.html"><button>Form</button></a></div>
+	    <div><a href="js5.html"><button>Map</button></a></div>
+	    <div><a href="js6.html"><button>Animation</button></a></div>
+	</div>
+
+  	</header>
+
+
+	<div id="content">
+		<h1 style="text-align: center;" >Score</h1>
+
+		<div id="form-container">
+		<form name="student_form">
+
+			<label>Name 1:</label>
+			<input type="text" name="name1">
+			<label>Score 1:</label>
+			<input type="text" name="score1">
+			<br>
+
+			<label>Name 2:</label>
+			<input type="text" name="name2">
+			<label>Score 2:</label>
+			<input type="text" name="score2">
+			<br>
+
+			<label>Name 3:</label>
+			<input type="text" name="name3">
+			<label>Score 3:</label>
+			<input type="text" name="score3">
+			<br>
+
+			<label>Name 4:</label>
+			<input type="text" name="name4">
+			<label>Score 4:</label>
+			<input type="text" name="score4">
+			<br>
+
+			<label>Name 5:</label>
+			<input type="text" name="name5">
+			<label>Score 5:</label>
+			<input type="text" name="score5">
+			<br>
+
+			<label>Name 6:</label>
+			<input type="text" name="name6">
+			<label>Score 6:</label>
+			<input type="text" name="score6">
+			<br><br>
+
+			<input type="button" name="submit" value="Submit" onclick="getScore();displayScores()">
+			<input type="button" name="default" value="Default" onclick="copyScore()">
+
+			<input type="reset" name="">
+
+		</form>
+		</div>
+
+		<div>
+			<h3>Student list and scores</h3>
+			<p id="student_list"></p>
+			<br>
+
+			<h3>Following students can get A grade for their score</h3>
+			<p id="student_A"></p>
+			<br>
+
+
+			<h3>Total and Average Score</h3>
+			<p id="student_total"></p>
+			<p id="student_average"></p>
+			<br>
+
+
+			<h3>Following are the sorted scores in descending order</h3>
+			<p id="student_sort"></p>
+			<br>
+
+		</div>
+		
+	</div>
+
+
+
+  	
+	<div id="footer">
+		<h4 style="text-align: center;" >Copyright (C) 2023s copyrights. KCGI. MGAKR. All Rights Reserved.</h4>
+		
+	</div>
+
+  
+  	</div>
+
+	
+</body>
+
+</html>
