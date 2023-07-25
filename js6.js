@@ -2,9 +2,13 @@
 var imgLeftEnd = 0
 
 document.addEventListener('DOMContentLoaded', function () {
-    var contentWidth = document.getElementById("content");
+	function updateWidth(){
+		var contentWidth = document.getElementById("content");
         imgLeftEnd =  parseInt(contentWidth.clientWidth) - 100;
-
+	}
+    
+	updateWidth()
+	window.addEventListener("resize", updateWidth);
    
 });
 
@@ -43,11 +47,17 @@ function moveGif(){
 var imgLeftEnd2 = 0
 
 document.addEventListener('DOMContentLoaded', function () {
-    var contentWidth2 = document.getElementById("content");
+	function updateWidth2(){
+		var contentWidth2 = document.getElementById("content");
         imgLeftEnd2 =  parseInt(contentWidth2.clientWidth) - 200;
-
+	}
+    
+	updateWidth2()
+	window.addEventListener("resize", updateWidth2);
    
 });
+
+
 
 imgLeftStart2 = 0;
 imgLeft2 = imgLeftStart2;
@@ -84,9 +94,13 @@ function moveGif2(){
 var imgLeftEnd3 = 0
 
 document.addEventListener('DOMContentLoaded', function () {
-    var contentWidth3 = document.getElementById("content");
+	function updateWidth3(){
+		var contentWidth3 = document.getElementById("content");
         imgLeftEnd3 =  parseInt(contentWidth3.clientWidth) - 300;
-
+	}
+    
+	updateWidth3()
+	window.addEventListener("resize", updateWidth3);
    
 });
 
